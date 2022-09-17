@@ -3,12 +3,7 @@
 ## 准备工作
 
 - subconverter 工具
-  1. 点击链接 [tindy2013/subconverter Actions](https://github.com/tindy2013/subconverter/actions/workflows/build.yml)
-  2. 点击左侧的 `Github CI`，点击列表中第一个编译通过的项，如下图
-     ![actions-build](./resources/actions-build.png)
-  3. 页面下滑，选择对应的的平台的软件，然后下载，如下图
-     ![github-ci-01](./resources/github-ci-01.png)
-     ![github-ci-02](./resources/github-ci-02.png)
+  点击链接 [tindy2013/subconverter Releases](https://github.com/tindy2013/subconverter/releases)，下载对应平台的包
 - [ACL4SSR 在线订阅转换](https://acl4ssr-sub.github.io/) 网页
 - 一个订阅链接，支持 v2ray, ss 等
 
@@ -29,15 +24,15 @@
    - 模式设置。选择进阶模式
    - 订阅链接。自行填写
    - 客户端默认 `Clash新参数` 不用改
-   - 远程配置。第一次务必选择 `ACL4SSR 本地 默认版 分组比较全` ，待本机能够科学上网后，再将远程配置改为带 `Online` 的选项，比如 `ACL4SSR_Online 默认版 分组比较全(与Github同步)`，所以第四步会有两次导入
-   - 后端地址。务必选择 `localhost:25500 本地版`，对应第二步本地运行的 subconverter
+   - 远程配置。第一次务必选择 `ACL4SSR 本地 默认版 分组比较全` ，待本机能够科学上网后，再将远程配置改为带有 `Online` 的选项，比如 `ACL4SSR_Online 默认版 分组比较全(与Github同步)`，所以下面的第 4 步会有两次导入
+   - 后端地址。务必选择 `localhost:25500 本地版`，对应第 2 步本地运行的 subconverter 的地址
    - 输出文件名。自行填写
    - 右侧还有更多选项和定制功能，你了解是什么就选，不了解就不用动它了
 
-   填写好后应该如下图所示
+   填写好后应该如下图所示。点击生成订阅链接，然后复制它
    ![config](./resources/config.png)
 
-4. 点击 `生成订阅链接`，会自动复制链接，然后在 clash 中导入。如下图所示
+4. 将复制的链接在 clash 中导入。如下图所示
    ![clash-import](./resources/clash-import.png)
 
 5. 没什么错误就可以关掉 subconverter 了，后续如果需要更新订阅再打开它
